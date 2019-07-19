@@ -17,14 +17,14 @@ namespace EnviaEmail
 
             try
             {
-                client.Host = "smtp.kinghost.net";
+                client.Host = "smtp server";
                 client.EnableSsl = true;
-                client.Credentials = new System.Net.NetworkCredential("naoresponda@funmotors.com.br", "cfmotoBR369");
+                client.Credentials = new System.Net.NetworkCredential("user", "password");
                 MailMessage mail = new MailMessage();
-                mail.Sender = new MailAddress("naoresponda@funmotors.com.br");
-                mail.From = new MailAddress("naoresponda@funmotors.com.br");
+                mail.Sender = new MailAddress("mail senderr");
+                mail.From = new MailAddress("mail sender");
                 mail.To.Add(new MailAddress(destinatario));
-                mail.Subject = "Contato";
+                mail.Subject = "subject";
                 mail.IsBodyHtml = true;
 
                 if(anexo != "")
