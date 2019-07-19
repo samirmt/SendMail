@@ -1,3 +1,3 @@
 # SendMail
-Send mail with attachment
+Send mail with attachment C# WindowsForm
 
